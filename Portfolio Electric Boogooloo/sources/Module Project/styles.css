@@ -1,0 +1,297 @@
+/*
+dark blue: #00296B
+med blue: #003F88
+light blue: #00509D
+dark yellow: #F5C000
+light yellow: #FFDA1F 
+*/
+
+body{
+    font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding:0;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #F5C000;
+    height: 50px
+}
+h1 {
+    line-height: 50px;
+    font-size: 40px;
+    padding: 0 10px;
+    margin: 0;
+}
+#home {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #FFDA1F;
+    width: 100px;
+}
+#navControl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFDA1F;
+    height: 50px;
+    line-height: 40px;
+    font: 40px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    width: 100px;
+}
+nav a {
+    height: 45px;
+    line-height: 40px;
+    font: 40px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    background: #FFDA1F;
+    color: #003F88;
+    width: 100%;
+    text-align: center;
+}
+main {
+    margin: 60px 0 0;
+}
+.accordian {
+    display: none;
+    flex-direction: column;
+}
+.assignmentSeperation {
+    display: flex;
+    flex-direction: column;
+    border: #000 1px solid;
+    margin: 5px;
+}
+
+h2 {
+    background: #003F88;
+    color: #eee;
+    line-height: 30px;
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+}
+
+
+#madLibDisplay {
+    padding: 10px;
+    min-height: 100px;
+    background: rgba(255,218,31,.5);
+}
+#madLibForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#madLibForm input {
+    border: #00509D 1px solid;
+    border-radius: 5px;
+    margin: 5px;
+    height: 30px;
+}
+
+#madLibBTN, #objBTN, #impBTN, #decBTN {
+    background: #F5C000;
+    border: #FFDA1F  1px solid !important;
+    display: flex;
+    align-self: center;
+    border-radius: 5px;
+    margin: 5px;
+    height: 30px;
+}
+#madLibBTN:hover, #objBTN:hover, #impBTN:hover, #decBTN:hover{
+    background: #FFDA1F;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    align-self: center;
+    border-radius: 5px;
+    margin: 5px;
+    height: 30px;
+}
+#loopBTNs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#objectDisplay {
+    padding: 10px;
+    min-height: 75px;
+    background: rgba(255,218,31,.5);
+}
+
+#loopDisplay{
+    padding: 10px;
+    min-height: 100px;
+    background: rgba(255,218,31,.5);
+}
+
+.calculatorGrid {
+    display: grid;
+    justify-content: center;
+    align-content:center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+.calculatorGrid > button {
+    cursor:pointer;
+    font-size:2rem;
+    border: 1px solid #000;
+    outline:none;
+    background-color: #fff;
+}
+.calculatorGrid > button:hover {
+    background-color: rgba(97, 42, 42, 0.9);
+}
+.spanTwo{
+    grid-column: span 2;
+}
+.calcOutput{
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display:flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding:10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+.calcOutput .perviousOperand {
+    color: rgba(255, 255, 255, .75);
+    font-size:1.5rem;
+}
+.calcOutput .currentOperand {
+    color: rgba(255, 255, 255, .75);
+    font-size:2.5rem;
+}
+
+.form {
+    padding: 10px 20px;
+}
+
+.form h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.form-field {
+    margin-bottom: 5px;
+
+}
+
+.form-field label {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.form-field input {
+    border: solid 2px #f0f0f0;
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+}
+
+.form-field input:focus {
+    outline: none;
+}
+
+.form-field.error input {
+    border-color: var(--error-color);
+}
+
+.form-field.success input {
+    border-color: var(--success-color);
+}
+
+
+.form-field small {
+    color: var(--error-color);
+}
+
+
+/* button */
+.btn {
+    width: 100%;
+    padding: 3%;
+    background: #1c4a7c;
+    border-bottom: 2px solid #4290e4;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: #0069d9;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+  #cookieDisplay{
+    height: 150px;
+    background:  rgba(255,218,31,.5);
+  }
+  #playground{
+    height: 25px;
+    color: #8B0000;
+  }
+  .cookieButton{
+    background: #F5C000;
+    border: #FFDA1F  1px solid !important;
+    display: flex;
+    
+    border-radius: 5px;
+    margin: 5px;
+    height: 30px;
+    
+
+  }
+  .cookieButton:hover{
+    background: #FFDA1F;
+    border: none;
+    font-weight: bold;
+    display: flex;
+    
+    border-radius: 5px;
+    margin: 5px;
+    height: 30px;
+
+  }
+  #pluginDisplay{
+    background:  rgba(255,218,31,.5);
+    height: 150px;
+
+  }
+ 
