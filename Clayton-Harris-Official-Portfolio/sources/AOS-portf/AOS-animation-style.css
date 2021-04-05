@@ -1,0 +1,240 @@
+
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+}
+header {
+    position: fixed;
+    width: 100%;
+    height:65px top 0 left;
+    z-index: 10;
+    color: #fff;
+}
+header #logo {
+    float: left;
+    margin: 5px 10px 5px 20px;
+}
+h1{
+    float: left;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 10px;
+    color: #fff;
+}
+h2{
+    color: #fff;
+}
+nav {float: right;
+}
+nav ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav input:checked + ul{
+    display: block;
+    padding-top: 50px;
+}
+nav input {
+    display: none;
+}
+nav label {
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+nav a {
+    display: block;
+    width: 120px;font-weight: 700;
+    line-height: 45px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(0,0,0,0.49);
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    clear: both;
+    text-align: center;
+    padding-top: 26%;
+    background-image: url(images/notebook.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.hero h1 {
+    font-size: 6.5vw;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+.hero h2 {
+    font-size: 3.5vw;
+}
+.hero .btn{
+    
+  border: 3.5px solid #fff;
+  color:#fff;
+  padding: 18px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: .5em;
+   
+    
+}
+main{
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: #666;
+}
+#intro h3{
+    text-align: center;
+    font-size: 3.5vw;
+    padding: 1.5px;
+    color: black;
+}
+#cards ul {
+    margin: 0;
+    padding: 0;
+}
+#cards li{
+    list-style: none;
+    display: inline-block;
+    background-color: rgb(231, 227, 227);
+    box-shadow: .5px 1px rgba(0,0,0,0.49);
+    margin-top: 20px;
+    padding-top: 20px;
+}
+#testimonials ul{
+    margin-top: 20px;
+    padding-top: 20px;
+
+}
+#testimonials li{
+    margin-top: 60px;
+    padding-top: 60px;
+    background: #eee;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    list-style: none;
+}
+#testimonials li img{
+    position: absolute;
+    top: -50px;
+    left: 55%;
+    margin-left: -60px;
+}
+.promo{
+    color:#fff;
+    padding: 18px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    background-color: rgb(12, 111, 192);
+    text-align: center;
+    margin-left: 2rem;
+    
+}
+footer{
+    background-color: black;
+    display: block;
+    padding: 2rem;
+    margin: 2rem;
+    color: #fff;
+    text-align: center;
+}
+@media(min-width:768px){
+    nav ul{
+        display:initial;
+        
+    }
+    nav label{
+        display: none;
+    }
+    nav li{
+        float: left;
+        
+    }
+    #intro img{
+        float: left;
+    }
+    #testimonials li{
+        float: left;
+        width: 48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+    .promo{
+        width: 100%
+    }
+}
+@media(min-width:900px){
+    #intro img 
+    {
+        width: 40%;
+    }
+    #cards li{
+       width: 31%;
+    }
+    #cards ul{
+       clear: both;
+     }
+    main{max-width: 900px;}
+}
+@media(min-width:1200px){
+    .hero {
+        padding-top: 35vh;
+    }
+    .hero h1 {font-size: 3.5vw;
+    }
+    .hero h2 {font-size: 2.5vw;
+    }
+    main{
+        max-width: 1200px;
+    }
+    
+    #testimonials li{
+        width: 23%;
+        margin-left: 1%;
+        margin-right: 1%;
+
+    }
+    #testimonials li img{
+        
+        top: -85px;
+        left: 55%;
+        margin-left: -60px;
+    }
+
+}
+.navbar.scrolled {
+    background-color: rgba(0,0,0,0.5  )!important;
+    transition: background-color 200ms linear;
+}
+[data-aos=rotate]{
+    transform:rotate(-180deg);
+    transition:all 1.2s ease-in-out 0.5s;
+}
+[data-aos=rotate].aos-animate {
+    transform:rotate(0deg);
+}

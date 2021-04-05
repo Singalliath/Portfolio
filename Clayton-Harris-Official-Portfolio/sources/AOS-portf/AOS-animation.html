@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AOS animation</title>
+    <link rel="stylesheet" href="AOS-animation-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <header class="navbar">
+        <img src="images/logo.png" width="45" height="35" alt="web portfolio" id="logo">
+        <h1>xyz design</h1>
+        <nav>
+            <label for="menu">&#9776;</label>
+            <input type="checkbox" id="menu">    
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="#intro">About</a></li>
+                <li><a href="#cards">Portfolio</a></li>
+                <li><a href="#testimonials">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-inner">
+            <h1 data-aos="fade-up"data-aos-duration="950"data-aos-delay="300">My Web Portfolio</h1>
+            <h2 data-aos="fade-up">Look at my websites and logo design</h2>
+                <a href="#" class="btn">Get a Quote</a>
+        </div>
+    
+    </section>
+    <main>
+    <section id="intro">    
+        <h3>I can make you website more profitable</h3>
+            <img src="images/web.png" alt=""/>    
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                 Integer nec nibh molestie, efficitur leo sed, viverra nunc.
+                  Donec vehicula accumsan erat facilisis ullamcorper.
+                   Donec commodo quis dui nec placerat. Donec mi orci,
+                    scelerisque eget nisl ac, hendrerit condimentum odio.
+                     Nam dictum odio eget quam tempus, a mattis odio
+                     ornare. Nullam auctor libero ut libero suscipit,
+                      ut accumsan nunc condimentum.
+                       Donec ullamcorper maximus sapien quis egestas.</p>
+                        <p>Mauris viverra scelerisque lobortis.
+                             Orci varius natoque penatibus et magnis dis parturient montes,
+                              nascetur ridiculus mus.
+                               Fusce ultrices enim sit amet elit tincidunt maximus.
+                                Suspendisse vitae pellentesque lectus.
+                                 Duis commodo leo suscipit augue mollis,
+                                  non venenatis dolor ullamcorper.
+                                   Duis tincidunt scelerisque lacus,
+                                    vel vehicula leo consectetur vel.</p>
+        </section> 
+        <section id="cards">
+            <h3> My portfolio</h3>
+            <ul>  
+                <li data-aos="flip-right">
+                    <h4>Mobile App Development</h4>
+                    <img src="images/mobile.jpg" alt="">
+                    <p>Mauris viverra scelerisque lobortis.</p>
+                </li>      
+                <li data-aos="fade-up">
+                    <h4>Web Programming</h4>        
+                    <img src="images/code.jpg" alt="">       
+                    <p>Mauris viverra scelerisque lobortis.</p>      
+                </li>      
+                <li data-aos="fade-left">        
+                    <h4 >Multimedia</h4>        
+                    <img src="images/multimedia.jpg" alt="">        
+                    <p>Mauris viverra scelerisque lobortis.</p>      
+                </li>    
+            </ul>  
+        </section>
+        <section id="testimonials">    
+            <h3> My Clients</h3>
+                <p>Mauris viverra scelerisque lobortis. Orci varius natoque penatibus et magnis dis parturient montes,
+                     nascetur ridiculus mus. Fusce ultrices enim sit amet elit tincidunt maximus.
+                      Suspendisse vitae pellentesque lectus. Duis commodo leo suscipit augue mollis,
+                       non venenatis dolor ullamcorper.</p>
+                <ul>      
+                    <li data-aos="zoom-in">
+                        <img src="images/avatar1.png" alt="James Brown">        
+                        <h3>James Brown, <br> Programmer</h3> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nemo accusantium </p>
+                    </li>      
+                    <li data-aos="zoom-in"> <img src="images/avatar2.png" alt="Jennifer Phillips">
+                        <h3>Jennifer Phillips, <br> UX Desinger</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nemo accusantium </p>
+                    </li>      
+                    <li data-aos="zoom-in">
+                        <img src="images/avatar1.png" alt="James Brown"> 
+                        <h3>James Brown, <br> Programmer</h3>        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nemo accusantium </p>
+                    </li>      
+                    <li data-aos="zoom-in">
+                        <img src="images/avatar2.png" alt="James Brown">
+                        <h3>James Brown, <br> Programmer</h3>        
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam nemo accusantium </p>
+                        </li>    
+                    </ul>  
+        </section>
+        <div class="promo" data-aos="rotate">
+            <h3 id="contact">Orci varius natoque penatibus et magnis dis parturient</h3>  
+        </div>
+    </main>
+    <footer>&COPY;</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>AOS.init({duration:1200});</script>
+    <script>$(function () {  $(document).scroll(function () {    var $nav = $(".navbar");$nav.toggleClass('scrolled',$(this).scrollTop() > $nav.height());  });});</script>
+</body>
+</html>
